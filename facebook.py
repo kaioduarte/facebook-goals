@@ -32,7 +32,7 @@ def get_args() -> dict:
 
 
 def get_driver() -> Chrome:
-    prefs = prefs = {'profile.default_content_setting_values.notifications': 2}
+    prefs = {'profile.default_content_setting_values.notifications': 2}
 
     chrome_options = ChromeOptions()
     chrome_options.add_experimental_option('prefs', prefs)
@@ -59,7 +59,6 @@ def login(driver: Chrome, email: str, password: str):
 def get_comment_input(driver: Chrome) -> WebElement:
     comment_css = '[contenteditable=true]'
     driver.execute_script(f'document.querySelector("{comment_css}").focus()')
-
     return driver.find_element_by_css_selector(comment_css)
 
 
