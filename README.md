@@ -14,6 +14,7 @@ Script para ajudar na meta de comentários dos amigos.
 ## Como usar
 
 - `python facebook.py -u email@domain.com -p password URL_DO_POST`
+- Adicionar `-v` para habilitar o modo verboso
 
 ## Aviso
 
